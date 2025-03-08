@@ -10,7 +10,7 @@ body{
 	width: 100%;
 }
 .navbar{
-	background-image: url("img/132.png");
+	background-image: url("img/write.jpg");
 	padding: 20px 200px;
 }
 .nav-item{
@@ -217,7 +217,7 @@ footer{
 /*Mobile */
 @media only screen and (max-device-width:999px){
 	.top-section{
-		background-image: url("img/m5.jpg");
+		background-image: url("img/write.jpg");
 		background-size: cover;
 		background-position: center 30%;
 		height: 100vh;
@@ -234,7 +234,7 @@ footer{
 		padding-top: 250px; 
 	}
 	.header-text{
-		background-image: url("img/132.png");
+		background-image: url("img/write.jpg");
 		margin-top: -50px;
 		margin-left: 50px;
 		padding: 0 20px;
