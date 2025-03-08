@@ -96,7 +96,7 @@ body{
 	background-color: #000;
 }
 .write{
-	background-image: url("");
+	background-image: url("./img/write.jpg");
 	background-position: top center;
 	background-size: cover;
 }
