@@ -1,9 +1,32 @@
+/* General Styles */
+body {
+	font-family: 'Lato', sans-serif;
+	line-height: 1.6;
+	background-color: #f9f9f9;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3 {
+	color: #0056b3;
+}
+
+a {
+	color: #0056b3;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 body{
 	color: #fff;
 }
 /*Top Section*/
 .top-section{
-	background-image: url("img/write.jpg");
+	background-image: url("img/write.png.png");
 	background-size: cover;
 	background-position: center center;
 	height: 100vh;
@@ -44,6 +67,16 @@ body{
 	font-size: 20px;
 }
 
+/* Hero Section */
+.hero-section {
+	background: url('img/hero-bg.jpg') no-repeat center center/cover;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+}
 
 /*Why Us Section*/
 #why-us{
@@ -69,18 +102,18 @@ body{
 }
 
 /*Our Services*/
-#services{
-	background-image: linear-gradient(20deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0.3981967787114846) 37%),url("img/m4.jpg");
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center center;
-	color: #000;
-	padding-bottom: 30px; 
-}
-.serv-head{
-	color: #000;
+#services {
+	background-color: #f9f9f9;
+	padding: 50px 0;
 }
 
+#services h2 {
+	color: #333;
+}
+
+#services .text-muted {
+	color: #666;
+}
 
 /*Our Mechanics*/
 #mechanics{
@@ -101,29 +134,60 @@ body{
 	background-size: cover;
 }
 .floating {
-    -webkit-animation-name: floating;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: ease-in-out;
-    -moz-animation-name: floating;
-    -moz-animation-duration: 3s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: ease-in-out;
+	animation: floating 3s ease-in-out infinite;
 }
-@-webkit-keyframes floating {
-    from {-webkit-transform:translate(0, 0px);}
-    65% {-webkit-transform:translate(0, 15px);}
-    to {-webkit-transform: translate(0, -0px);    }    
+@keyframes floating {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(15px);
+	}
 }
-@-moz-keyframes floating {
-    from {-moz-transform:translate(0, 0px);}
-    65% {-moz-transform:translate(0, 15px);}
-    to {-moz-transform: translate(0, -0px);}    
+/* Modal Styles */
+.modal-content {
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.modal-header {
+	background-color: #0056b3;
+	color: #fff;
+}
+
+.modal-footer .btn {
+	padding: 10px 20px;
+	font-size: 16px;
+}
+
+/* Contact Section */
+#contact {
+	background-color: #0056b3;
+	color: #fff;
+	padding: 50px 0;
+}
+
+#contact h4 {
+	color: #fff;
+}
+
 /*Footer*/
-footer{
-	background-color: #000011;
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
 }
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
 .foot-logo{
 	height: 150px;
 	width: 150px;
